@@ -13,6 +13,8 @@ GameObject:
   - component: {fileID: 7325685880339890275}
   - component: {fileID: 6926633619418293546}
   - component: {fileID: 2305211906007930386}
+  - component: {fileID: 1440935269901036851}
+  - component: {fileID: 6357628191693787338}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -105,7 +107,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDamping: 0
   m_AngularDamping: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 10
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -116,7 +118,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 4
+  m_Constraints: 0
 --- !u!61 &6926633619418293546
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -176,5 +178,33 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movementSpeed: 3
-  dashSpeed: 1
+--- !u!114 &1440935269901036851
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 445831227596155269}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 51ca3fc1a86a36c46b359042f63028c6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isJumping: 0
+  jumpHeight: 5000
+--- !u!114 &6357628191693787338
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 445831227596155269}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fce493dd4e74ee34c9aec8ce8de98f06, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dashSpeed: 2
+  dashDuration: 0.5
+  dashCooldown: 2.5
   isDashing: 0

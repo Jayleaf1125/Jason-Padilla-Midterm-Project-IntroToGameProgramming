@@ -133,11 +133,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2305211906007930386, guid: 5465daea84a2bcb43acd34cbcbb9c9ae, type: 3}
       propertyPath: jumpHeight
-      value: 500
+      value: 10000
+      objectReference: {fileID: 0}
+    - target: {fileID: 7325685880339890275, guid: 5465daea84a2bcb43acd34cbcbb9c9ae, type: 3}
+      propertyPath: m_Mass
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7325685880339890275, guid: 5465daea84a2bcb43acd34cbcbb9c9ae, type: 3}
+      propertyPath: m_Constraints
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7325685880339890275, guid: 5465daea84a2bcb43acd34cbcbb9c9ae, type: 3}
       propertyPath: m_GravityScale
-      value: 2
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 7325685880339890275, guid: 5465daea84a2bcb43acd34cbcbb9c9ae, type: 3}
       propertyPath: m_AngularDamping
@@ -190,7 +198,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 445831227596155269, guid: 5465daea84a2bcb43acd34cbcbb9c9ae, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1093139558}
   m_SourcePrefab: {fileID: 100100000, guid: 5465daea84a2bcb43acd34cbcbb9c9ae, type: 3}
 --- !u!1 &530704292
 GameObject:
@@ -329,6 +340,25 @@ MonoBehaviour:
     m_MipBias: 0
     m_VarianceClampScale: 0.9
     m_ContrastAdaptiveSharpening: 0
+--- !u!1 &1093139552 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 445831227596155269, guid: 5465daea84a2bcb43acd34cbcbb9c9ae, type: 3}
+  m_PrefabInstance: {fileID: 313488743}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1093139558
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1093139552}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 51ca3fc1a86a36c46b359042f63028c6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isJumping: 0
+  jumpHeight: 5000
 --- !u!1001 &4363305586635368352
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -342,8 +372,12 @@ PrefabInstance:
       value: Ground
       objectReference: {fileID: 0}
     - target: {fileID: 7832860476026235666, guid: 55d761a6578db0246b126d762d507a8b, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 18.150362
+      objectReference: {fileID: 0}
+    - target: {fileID: 7832860476026235666, guid: 55d761a6578db0246b126d762d507a8b, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.07
+      value: -0.0561
       objectReference: {fileID: 0}
     - target: {fileID: 7832860476026235666, guid: 55d761a6578db0246b126d762d507a8b, type: 3}
       propertyPath: m_LocalPosition.y
