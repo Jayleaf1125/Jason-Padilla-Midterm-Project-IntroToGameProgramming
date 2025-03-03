@@ -30,9 +30,6 @@ public class ChangeLevel : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (isInteractableChange)
-        {
-            SceneManager.LoadSceneAsync(sceneLevel);
-        }
+        if (isInteractableChange) ChangeScene();
     }
 }

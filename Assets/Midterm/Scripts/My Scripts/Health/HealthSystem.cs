@@ -1,6 +1,6 @@
-using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class HealthSystem : MonoBehaviour
 {
@@ -18,16 +18,9 @@ public class HealthSystem : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetKeyDown(KeyCode.J))
+        if(currentHealth <= 0)
         {
-            Debug.Log("Damage taken");
-            TakeDamage(10);
-        }
-
-        if (Input.GetKeyDown(KeyCode.K))
-        {
-            Debug.Log("Damage healed");
-            HealDamage(10);
+            PlayDeath();
         }
 
         healthbar.value = (currentHealth / maxHealth);
@@ -47,5 +40,8 @@ public class HealthSystem : MonoBehaviour
         currentHealth = remainingHealth;
     }
 
-
+    void PlayDeath()
+    {
+        SceneManager.LoadSceneAsync(3);
+    }
 }
