@@ -29,13 +29,12 @@ public class Dash : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.LeftShift) && !isDashing)
         {
             GetComponent<Movement>().movementSpeed *= dashSpeed;
-            _sr.color = Color.yellow;
+            _sr.color = Color.blue;
             isDashing = true;
 
             yield return new WaitForSeconds(dashDuration);
 
             GetComponent<Movement>().movementSpeed /= dashSpeed;
-            _sr.color = Color.white;
             StartCoroutine(DashCooldown());
         }
     }
@@ -44,7 +43,7 @@ public class Dash : MonoBehaviour
     {
         while (isDashing)
         {
-            _sr.color = Color.red;
+            _sr.color = Color.cyan;
             yield return new WaitForSeconds(dashCooldown);
             _sr.color = Color.white;
             isDashing = false;

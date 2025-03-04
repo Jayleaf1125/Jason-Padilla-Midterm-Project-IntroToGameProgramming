@@ -7,6 +7,7 @@ using UnityEngine;
 
         private Rigidbody2D _rb;
         private Vector2 _vel2;
+
         // Start is called once before the first execution of Update after the MonoBehaviour is created
         void Start()
         {
@@ -32,7 +33,7 @@ using UnityEngine;
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.collider.CompareTag("Ground"))
+        if (collision.collider.CompareTag("Ground") || collision.collider.CompareTag("FirePit"))
         {
             isJumping = false;
         }
