@@ -1,12 +1,10 @@
 using UnityEngine;
 using System.Collections;
 
-public class ContinousFireDamage : MonoBehaviour
+public class FireHazardDamage : MonoBehaviour
 {
-    public float initialDamage;
-    public float overTimeDamage;
+    public float damage;
 
-    private bool _isContinousDamageActive = false;
     private Collider2D _playerGameObject;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -27,7 +25,7 @@ public class ContinousFireDamage : MonoBehaviour
 
         if (_playerGameObject.CompareTag("Player"))
         {
-            _playerGameObject.GetComponent<HealthSystem>().TakeDamage(initialDamage);
+            _playerGameObject.GetComponent<HealthSystem>().TakeDamage(damage);
             _playerGameObject.GetComponent<SpriteRenderer>().color = Color.magenta;
         }
     }
