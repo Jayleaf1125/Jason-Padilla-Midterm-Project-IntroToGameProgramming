@@ -8,3 +8,10 @@ In the folder named "ExamplesOfMidterms" there are scenes that are examples of d
 - "GoodExample", a midterm submission that implements 2 mechanics with game design
 
 Note: the scripts in the "ExamplesOfMidterms" folder you are free to use but to count as an implemented mechanic they need to substantial changes
+
+Things I implemented:
+- Changing Scene Block
+- Hazard Obstacle that when the player steps on, deals damage overtime 
+- Health System (Player can take and recover health)
+- Player has a dash skill and the dash skill has a cooldown
+- Player can jump, but cannot jump for than once while in the air (no double jump)
