@@ -20,6 +20,21 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Midterm/Scenes/Win Screen.unity
     guid: 67d1cca7708693f448f8623bf551c303
+  - enabled: 1
+    path: Assets/Midterm/Scenes/Official Game/Tutorial Level.unity
+    guid: 2c056a6b2322aae438ef3b59d9fab52a
+  - enabled: 1
+    path: Assets/Midterm/Scenes/Official Game/Level 1.unity
+    guid: e114dc461ab776447bca981fb1ad194e
+  - enabled: 1
+    path: Assets/Midterm/Scenes/Official Game/Level 2.unity
+    guid: 74ff0cdeed5e60f45803a660100b4ff8
+  - enabled: 0
+    path: Assets/Midterm/Scenes/Official Game/Level 3.unity
+    guid: afdee9b6ebd50a944b9f8c0b9feaef5f
+  - enabled: 0
+    path: Assets/Midterm/Scenes/Official Game/Final Level.unity
+    guid: f8f8f61758fb31a428eb6d38924a02e2
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0
