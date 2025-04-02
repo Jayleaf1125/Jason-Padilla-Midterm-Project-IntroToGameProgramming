@@ -15,6 +15,7 @@ public class Dash : MonoBehaviour
     public bool isDashing = false;
 
     public ParticleSystem particles;
+    public AudioSource dashAudioSource;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -38,6 +39,7 @@ public class Dash : MonoBehaviour
             _animator.SetBool("isDashing", true);
             isDashing = true;
             particles.Play();
+            dashAudioSource.Play();
 
             yield return new WaitForSeconds(dashDuration);
 
