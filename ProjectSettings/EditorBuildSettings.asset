@@ -9,25 +9,25 @@ EditorBuildSettings:
     path: Assets/Scenes/SampleScene.unity
     guid: 8c9cfa26abfee488c85f1582747f6a02
   - enabled: 1
-    path: Assets/Midterm/Scenes/Demo.unity
+    path: Assets/Teacher Example/Scenes/Official Game/Demo.unity
     guid: 91b97e406c1ddc640b1bb3b96e12528c
   - enabled: 1
-    path: Assets/Midterm/Scenes/MidtermTemplate.unity
+    path: Assets/Teacher Example/Scenes/MidtermTemplate.unity
     guid: 2f76be615e935a6408c25961dab65588
   - enabled: 1
-    path: Assets/Midterm/Scenes/GameOver Screen.unity
+    path: Assets/Teacher Example/Scenes/GameOver Screen.unity
     guid: 4d46cbe08e8b91747a81e2876bad7ea5
   - enabled: 1
-    path: Assets/Midterm/Scenes/Win Screen.unity
+    path: Assets/Teacher Example/Scenes/Win Screen.unity
     guid: 67d1cca7708693f448f8623bf551c303
   - enabled: 1
-    path: Assets/Midterm/Scenes/Official Game/Tutorial Level.unity
+    path: Assets/Teacher Example/Scenes/Official Game/Tutorial Level.unity
     guid: 2c056a6b2322aae438ef3b59d9fab52a
   - enabled: 1
-    path: Assets/Midterm/Scenes/Official Game/Level 1.unity
+    path: Assets/Teacher Example/Scenes/Official Game/Level 1.unity
     guid: e114dc461ab776447bca981fb1ad194e
   - enabled: 1
-    path: Assets/Midterm/Scenes/Official Game/Level 2.unity
+    path: Assets/Teacher Example/Scenes/Official Game/Level 2.unity
     guid: 74ff0cdeed5e60f45803a660100b4ff8
   - enabled: 0
     path: Assets/Midterm/Scenes/Official Game/Level 3.unity

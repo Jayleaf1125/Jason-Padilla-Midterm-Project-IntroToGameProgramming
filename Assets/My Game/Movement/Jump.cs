@@ -7,11 +7,13 @@ using UnityEngine;
 
         private Rigidbody2D _rb;
         private Vector2 _vel2;
+        private Animator _animator;
 
         // Start is called once before the first execution of Update after the MonoBehaviour is created
         void Start()
         {
             _rb = GetComponent<Rigidbody2D>();
+            _animator = GetComponent<Animator>();
         }
 
         // Update is called once per frame
@@ -28,6 +30,7 @@ using UnityEngine;
                 _rb.linearVelocity = _vel2;
                 _rb.linearVelocity = new Vector2(_vel2.x, _rb.linearVelocity.y);
                 isJumping = true;
+                _animator.SetBool("isJumping", true);
             }
         }
 
@@ -36,6 +39,7 @@ using UnityEngine;
         if (collision.collider.CompareTag("Ground") || collision.collider.CompareTag("FirePit"))
         {
             isJumping = false;
+            _animator.SetBool("isJumping", false);
         }
     }
 }
