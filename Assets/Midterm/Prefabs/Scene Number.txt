@@ -1,9 +1,0 @@
-Scene Number:
-
-Game Over - 3
-Tut Level - 5
-Level 1 - 6
-Level 2 - 7
-Level 3 - 8
-Final 1 - 9
-
